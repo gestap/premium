@@ -1,7 +1,11 @@
 * {
   margin: 0;
   padding: 0;
+}
+
+html {
   font-size: 21px;
+
 }
 
 :root {
@@ -30,6 +34,7 @@ a {
   display: flex;
   width: 90%;
   margin: 0 auto;
+  margin-top: 10px;
   max-width: 1024px;
   justify-content: space-between;
   align-items: center;
@@ -80,10 +85,6 @@ a {
   color: white;
   padding: 10px;
 }
-/* .nav {
-  display: flex;
-  justify-content: center;
-} */
 
  .nav ul {
   display: flex;
@@ -101,4 +102,227 @@ a {
 
 .nav ul li:last-child::after {
  content: none;
+}
+
+
+
+
+.slider-top {
+  background: var(--main-color);
+  color: white;
+  position: relative;
+}
+
+.slider-bottom {
+  position: relative;
+}
+
+.slider-element {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr;
+}
+
+.slider-element_marginBig {
+  margin-top: 70px;
+}
+
+.slider-element-photo{
+  margin: 0 auto;
+}
+
+.slider-element-info {
+  text-align: left;
+}
+
+.slider-element-info h1 {
+  font-size: 2.9rem;
+}
+
+.slider-element-info .slider-element-info_smallText {
+  font-size: 0.8rem;
+  font-family: 'Open Sans';
+  margin-top: 25px;
+}
+
+.slider-element-info .button_conteiner_big {
+  margin-top: 43px;
+  margin-bottom: 43px;
+}
+
+.slider-element-info .button_big {
+  font-size: 1.28rem;
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: 10px 25px;
+}
+
+.conteiner-grid .slider-element {
+  grid-template-rows: 150px;
+  padding: 20px 0;
+}
+
+.conteiner-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.slider-element_border {
+  border-left: 1px solid #e7e7e7;
+}
+
+.slider-element-info .element_grey{
+  color: #afafaf;
+  font-size: 1.28rem;
+  text-transform: uppercase;
+}
+
+.button_small_green {
+  color: white;
+  background: #3cc395;
+  padding: 10px 15px;
+  border-radius: 3px;
+}
+
+.slider-element-info .button_conteiner_small {
+  margin-top: 30px;
+}
+
+p.prev.slick-arrow, p.next.slick-arrow{
+  height: 100%;
+  width: 150px;
+  position: absolute;
+  cursor: pointer;
+  top: 25%;
+}
+
+p.prev.slick-arrow {
+  background: url(img/prev.png) no-repeat;
+  left: 30px;
+}
+
+p.next.slick-arrow {
+  background: url(img/next.png) no-repeat;
+  right: -50px;
+}
+
+.slider-controls {
+  height: 40px;
+}
+
+.slider-controls .slick-dots {
+  position: absolute;
+  bottom: 30px;
+}
+
+.slider-controls .slick-dots li button::before {
+  color: white;
+  font-size: 10px;
+  opacity: 1;
+}
+
+.slider-controls .slick-dots li.slick-active button::before {
+  color: white;
+  opacity: .5;
+}
+
+
+
+
+.name {
+  background: var(--main-color);
+  color: white;
+  padding: 20px 0 15px 0;
+}
+
+.name .conteiner {
+  justify-content: flex-start;
+}
+
+.name h2 {
+  margin-left: 60px;
+  font-size: 1.47rem;
+}
+
+
+.conteiner-products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 25px;
+  margin-bottom: 45px;
+}
+
+
+.products-card {
+  display: grid;
+  grid-template-areas: 'prod prod'
+                       'name name'
+                       'price button';
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid #e7e7e7;
+  border-bottom: 5px solid #3cc395;
+  margin: 25px;
+  color: #afafaf;
+  width: 255px;
+  height: 260px;
+}
+
+.products-card-img {
+  grid-area: prod;
+  margin: 20px auto;
+}
+
+.products-card-name {
+  grid-area: name;
+  font-size: 1.28rem;
+}
+
+.products-card-price {
+  grid-area: price;
+  margin-top: 20px;
+  font-size: 1.28rem;
+
+}
+
+.products-card-button {
+  grid-area: button;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.footer-menu {
+  color: white;
+  background: var(--main-color);
+  font-size: 0.7rem
+}
+
+.conteiner-footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footer-menu-list {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.footer-menu-list p {
+  font-size: 1.28rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.footer-menu-list ul {
+  font-family: 'Open Sans';
+}
+
+.footer-rights {
+  background: #2da89b;
+  color: white;
+  font-family: 'Open Sans';
+  font-size: 0.7rem;
+}
+
+.footer-rights p {
+  margin: 15px 0;
 }

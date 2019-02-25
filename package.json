@@ -1,0 +1,24 @@
+{
+  "name": "premium",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gestap/premium.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gestap/premium/issues"
+  },
+  "homepage": "https://github.com/gestap/premium#readme",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "slick-carousel": "^1.8.1",
+    "vue": "^2.6.7"
+  }
+}
